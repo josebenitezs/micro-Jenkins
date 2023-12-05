@@ -62,6 +62,9 @@ services:
       - "4003:80"
     networks:
       - proyectos-app
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - PORT=4002
 
 networks:
   proyectos-app:
